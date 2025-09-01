@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2f3136;
+    color: #dcddde;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Server Sidebar */
+.server-sidebar {
+    width: 80px;
+    background-color: #202225;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.server-btn {
+    width: 60px;
+    height: 60px;
+    margin: 5px 0;
+    border-radius: 30px;
+    font-size: 24px;
+    background-color: #202225;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.server-btn:hover {
+    background-color: #5865F2;
+}
+
+/* Channels Panel */
+.channel-panel {
+    width: 220px;
+    background-color: #2f3136;
+    padding: 10px;
+}
+.channel-header {
+    font-size: 10px;
+    color: #8e9297;
+    margin-bottom: 5px;
+}
+.channel {
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.channel.active, .channel:hover {
+    background-color: #393c43;
+}
+
+/* Chat Panel */
+.chat-panel {
+    flex: 2;
+    background-color: #36393f;
+    display: flex;
+    flex-direction: column;
+}
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: scroll;
+}
+.chat-message {
+    display: flex;
+    margin-bottom: 10px;
+}
+.chat-message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.chat-message .msg-text {
+    background-color: #40444b;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+.chat-input {
+    display: flex;
+    padding: 10px;
+}
+.chat-input input, .chat-input select {
+    border-radius: 12px;
+    padding: 6px;
+    border: none;
+    margin-right: 5px;
+    background-color: #40444b;
+    color: white;
+}
+.chat-input button {
+    background-color: #5865F2;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.chat-input button:hover {
+    background-color: #4752c4;
+}
+
+/* Members Panel */
+.members-panel {
+    width: 220px;
+    background-color: #2f3136;
+    padding: 10px;
+}
+.members-header {
+    font-size: 10px;
+    color: #8e9297;
+    margin-bottom: 5px;
+}
+.members-panel ul {
+    padding: 0;
+}
+.members-panel li {
+    list-style: none;
+    margin-bottom: 5px;
+}

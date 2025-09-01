@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PyWeb Discord Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Server Sidebar -->
+        <div class="server-sidebar">
+            <button class="server-btn">🏠</button>
+            <button class="server-btn">🎮</button>
+            <button class="server-btn">📚</button>
+        </div>
+
+        <!-- Channels Panel -->
+        <div class="channel-panel">
+            <div class="channel-header">TEXT CHANNELS</div>
+            <ul id="channel-list">
+                <li class="channel active" onclick="switchChannel('#general')">#general</li>
+                <li class="channel" onclick="switchChannel('#memes')">#memes</li>
+                <li class="channel" onclick="switchChannel('#dev-log')">#dev-log</li>
+            </ul>
+        </div>
+
+        <!-- Chat Panel -->
+        <div class="chat-panel">
+            <div id="chat-messages" class="chat-messages"></div>
+            <div class="chat-input">
+                <select id="emoji-picker">
+                    <option>😎</option>
+                    <option>😂</option>
+                    <option>🤖</option>
+                    <option>🔥</option>
+                </select>
+                <input type="text" id="message-input" placeholder="Message #general">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+        <!-- Members Panel -->
+        <div class="members-panel">
+            <div class="members-header">MEMBERS</div>
+            <ul id="members-list">
+                <li>xlays [online]</li>
+                <li>Ana [idle]</li>
+                <li>Kai [dnd]</li>
+                <li>Botty [bot]</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
